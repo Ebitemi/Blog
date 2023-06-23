@@ -1,0 +1,340 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">Manage Posts</h4>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+          <!-- ============================================================== -->
+          <!-- Start Page Content -->
+          <!-- ============================================================== -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-0">Recent Posts</h4>
+                </div>
+                <div class="comment-widgets scrollable">
+                  <!-- Comment Row -->
+                  <div class="d-flex flex-row comment-row mt-0">
+                    <div class="p-2">
+                      <img
+                        src="{% static 'blog/assets/images/users/1.jpg' %}"
+                        alt="user"
+                        width="50"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="comment-text w-100">
+                      <h6 class="font-medium">James Anderson</h6>
+                      <span class="mb-3 d-block"
+                        >Lorem Ipsum is simply dummy text of the printing and
+                        type setting industry.
+                      </span>
+                      <div class="comment-footer">
+                        <span class="text-muted float-end">April 14, 2021</span>
+                        <button
+                          type="button"
+                          class="btn btn-cyan btn-sm text-white"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-sm text-white"
+                        >
+                          Publish
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm text-white"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Comment Row -->
+                  <div class="d-flex flex-row comment-row">
+                    <div class="p-2">
+                      <img
+                        src="{% static 'blog/assets/images/users/4.jpg' %}"
+                        alt="user"
+                        width="50"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="comment-text active w-100">
+                      <h6 class="font-medium">Michael Jorden</h6>
+                      <span class="mb-3 d-block"
+                        >Lorem Ipsum is simply dummy text of the printing and
+                        type setting industry.
+                      </span>
+                      <div class="comment-footer">
+                        <span class="text-muted float-end">May 10, 2021</span>
+                        <button
+                          type="button"
+                          class="btn btn-cyan btn-sm text-white"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-sm text-white"
+                        >
+                          Publish
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm text-white"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Comment Row -->
+                  <div class="d-flex flex-row comment-row">
+                    <div class="p-2">
+                      <img
+                        src="{% static 'blog/assets/images/users/5.jpg' %}"
+                        alt="user"
+                        width="50"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="comment-text w-100">
+                      <h6 class="font-medium">Johnathan Doeting</h6>
+                      <span class="mb-3 d-block"
+                        >Lorem Ipsum is simply dummy text of the printing and
+                        type setting industry.
+                      </span>
+                      <div class="comment-footer">
+                        <span class="text-muted float-end">August 1, 2021</span>
+                        <button
+                          type="button"
+                          class="btn btn-cyan btn-sm text-white"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-sm text-white"
+                        >
+                          Publish
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm text-white"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Comment Row -->
+                  <div class="d-flex flex-row comment-row">
+                    <div class="p-2">
+                      <img
+                        src="{% static 'blog/assets.jpg/images/users/4' %}"
+                        alt="user"
+                        width="50"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="comment-text w-100">
+                      <h6 class="font-medium">Johnathan Doeting</h6>
+                      <span class="mb-3 d-block"
+                        >Lorem Ipsum is simply dummy text of the printing and
+                        type setting industry.
+                      </span>
+                      <div class="comment-footer">
+                        <span class="text-muted float-end">August 1, 2021</span>
+                        <button
+                          type="button"
+                          class="btn btn-cyan btn-sm text-white"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-sm text-white"
+                        >
+                          Publish
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm text-white"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Comment Row -->
+                  <div class="d-flex flex-row comment-row">
+                    <div class="p-2">
+                      <img
+                        src="{% static 'blog/assets/images/users/3.jpg' %}"
+                        alt="user"
+                        width="50"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="comment-text w-100">
+                      <h6 class="font-medium">Johnathan Doeting</h6>
+                      <span class="mb-3 d-block"
+                        >Lorem Ipsum is simply dummy text of the printing and
+                        type setting industry.
+                      </span>
+                      <div class="comment-footer">
+                        <span class="text-muted float-end">August 1, 2021</span>
+                        <button
+                          type="button"
+                          class="btn btn-cyan btn-sm text-white"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-sm text-white"
+                        >
+                          Publish
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm text-white"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+                  <h4 class="card-title mb-0">Recent Activity</h4>
+                </div>
+                <ul class="list-style-none">
+                  <li class="d-flex no-block card-body">
+                    <i class="mdi mdi-check-circle fs-4 w-30px mt-1"></i>
+                    <div>
+                      <a href="#" class="mb-0 font-medium p-0"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</a
+                      >
+                      <span class="text-muted"
+                        >dolor sit amet, consectetur adipiscing</span
+                      >
+                    </div>
+                    <div class="ms-auto">
+                      <div class="tetx-right">
+                        <h5 class="text-muted mb-0">20</h5>
+                        <span class="text-muted font-16">Jan</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex no-block card-body border-top">
+                    <i class="mdi mdi-gift fs-4 w-30px mt-1"></i>
+                    <div>
+                      <a href="#" class="mb-0 font-medium p-0"
+                        >Congratulation Maruti, Happy Birthday</a
+                      >
+                      <span class="text-muted"
+                        >many many happy returns of the day</span
+                      >
+                    </div>
+                    <div class="ms-auto">
+                      <div class="tetx-right">
+                        <h5 class="text-muted mb-0">11</h5>
+                        <span class="text-muted font-16">Jan</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex no-block card-body border-top">
+                    <i class="mdi mdi-plus fs-4 w-30px mt-1"></i>
+                    <div>
+                      <a href="#" class="mb-0 font-medium p-0"
+                        >Maruti is a Responsive Admin theme</a
+                      >
+                      <span class="text-muted"
+                        >But already everything was solved. It will ...</span
+                      >
+                    </div>
+                    <div class="ms-auto">
+                      <div class="tetx-right">
+                        <h5 class="text-muted mb-0">19</h5>
+                        <span class="text-muted font-16">Jan</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex no-block card-body border-top">
+                    <i class="mdi mdi-leaf fs-4 w-30px mt-1"></i>
+                    <div>
+                      <a href="#" class="mb-0 font-medium p-0"
+                        >Envato approved Maruti Admin template</a
+                      >
+                      <span class="text-muted"
+                        >i am very happy to approved by TF</span
+                      >
+                    </div>
+                    <div class="ms-auto">
+                      <div class="tetx-right">
+                        <h5 class="text-muted mb-0">20</h5>
+                        <span class="text-muted font-16">Jan</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex no-block card-body border-top">
+                    <i
+                      class="mdi mdi-comment-question-outline fs-4 w-30px mt-1"
+                    ></i>
+                    <div>
+                      <a href="#" class="mb-0 font-medium p-0">
+                        I am alwayse here if you have any question</a
+                      >
+                      <span class="text-muted"
+                        >we glad that you choose our template</span
+                      >
+                    </div>
+                    <div class="ms-auto">
+                      <div class="tetx-right">
+                        <h5 class="text-muted mb-0">15</h5>
+                        <span class="text-muted font-16">Jan</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+          </div>
+          
+        </div>
+        <!-- ============================================================== -->
+
+{% endblock %}
+        

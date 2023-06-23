@@ -1,0 +1,56 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+ <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">New Category</h4>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+
+<!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+         
+          <!-- ============================================================== -->
+          <!-- Start Here -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                
+              <form method="post">
+                  <table class="table">
+                    <tr><th>Category Title</th></tr>
+                    <tr><td><input class="form-control" name="title"></td></tr>
+                    <tr><td><button class="btn btn-primary pull-left" >Save Category</button></td></tr>
+                    <!-- <tr><td> -->
+                  </table>
+              </form>
+              </div>
+            </div>
+          <!-- ============================================================== -->
+          
+
+          </div>
+        <!-- ============================================================== -->
+        <!-- Stop Here  -->
+        <!-- ============================================================== -->
+      </div>
+
+{% endblock %}

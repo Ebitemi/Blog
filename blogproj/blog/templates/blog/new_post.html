@@ -1,0 +1,80 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+ <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">New Post</h4>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+
+<!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+         
+          <!-- ============================================================== -->
+          <!-- Start Here -->
+          <!-- ============================================================== -->
+          <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                <form method="post">
+                    <table class="table">
+                      <tr><th>Post Title</th></tr>
+                      <tr><td><input class="form-control" name="title"></td></tr>
+                      <tr><th>Post Content</th></tr>
+                      <tr><td>
+                         <div class="card-body">
+                  <!-- Create the editor container -->
+                  <div id="editor" style="height: 300px">
+                  </div>
+                </div>
+                      </td></tr>
+                      <tr>
+                        <table class="table">
+                          <tr><th style="width:50%;">Category</th><th>Featured Image</th></tr>
+                          <tr>
+                            <td><select name="category" class="form-control">
+                                <option disabled selected required>--select</option>
+                                <option>Frontend</option>
+                                <option>Backend</option>
+                                <option>Fullstack</option>
+                                <option>Wordpress</option>
+                                <option>Tips</option>
+                                <option>Tutorials</option>
+                                <option>Tech Jokes</option>
+                                <option>Tech Memes</option>
+                                <option>Tech Awards</option>
+                            </select></td>
+                            <td><input class="form-control" type="file" name="feacturedImage">  </td>
+                          </tr>
+                        </table>
+                      </tr>
+                      <tr><td><button class="btn btn-primary pull-right">Save Post</button></td></tr>
+                    </table>
+                </form>
+                </div>
+              </div>
+          </div>
+        <!-- ============================================================== -->
+        <!-- Stop Here  -->
+        <!-- ============================================================== -->
+      </div>
+
+{% endblock %}

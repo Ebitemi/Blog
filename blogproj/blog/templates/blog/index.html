@@ -1,0 +1,779 @@
+{% load static %}
+
+<!doctype html>
+<html lang="zxx">
+    
+
+<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap Min CSS --> 
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/bootstrap.min.css' %}">
+		<!-- Owl Theme Default Min CSS --> 
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/owl.theme.default.min.css' %}">
+		<!-- Owl Carousel Min CSS --> 
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/owl.carousel.min.css' %}">
+		<!-- Owl Magnific Popup Min CSS --> 
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/magnific-popup.min.css' %}">
+		<!-- Animate Min CSS --> 
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/animate.min.css' %}">
+		<!-- Boxicons Min CSS --> 
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/boxicons.min.css' %}"> 
+		<!-- Flaticon CSS --> 
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/flaticon.css' %}">
+		<!-- Meanmenu Min CSS -->
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/meanmenu.min.css' %}">
+		<!-- Nice Select Min CSS -->
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/nice-select.min.css' %}">
+		<!-- Odometer Min CSS-->
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/odometer.min.css' %}">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/style.css' %}">
+		<!-- Dark CSS -->
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/dark.css' %}">
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="{% static 'blog/assetss/css/responsive.css' %}">
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="{% static 'blog/assetss/img/th-4189885426-removebg-preview.png' %}">
+		<!-- Title -->
+		<title>Fullstack Blog</title>
+    </head>
+
+    <body class="home-six">
+		<!-- Start Preloader Area -->
+		<div class="loader-wrapper">
+			<div class="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+		<!-- End Preloader Area -->
+
+		<!-- Start Heder Area --> 
+		<header class="header-area-six fixed-top">
+			<div class="top-header-area">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-sm-6">
+							<ul class="header-content-left">
+								<li>
+									<a href="tel:+44-458-895-456">
+										<i class="bx bx-phone-call"></i>
+										+234-817-483-4113
+									</a>
+								</li>
+								<li>
+									<a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#08606d646467487b6d637d266b6765">
+										<i class="bx bx-envelope"></i>
+										<span class="__cf_email__" data-cfemail="3c54595050537c4f595749125f5351">[info@fullstars.com]</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-6 col-sm-6">
+							<div class="header-content-right">
+								<ul class="language-area">
+									<li class="language-item-top">
+										<a href="#" class="language-bar">
+											<span>Language</span>		
+											<i class="bx bx-chevron-down"></i>
+										</a>
+
+										<ul class="language-item-bottom">
+											<li class="language-item">
+												<a href="#" class="language-link">
+													<img src="{% static 'blog/assetss/img/language/english.png' %}" alt="Image">
+													English
+												</a>
+											</li>
+											<li class="language-item">
+												<a href="#" class="language-link">
+													<img src="{% static 'blog/assetss/img/language/arab.png' %}" alt="Image">
+													العربيّة
+												</a>
+											</li>
+											<li class="language-item">
+												<a href="#" class="language-link">
+													<img src="{% static 'blog/assetss/img/language/germany.png' %}" alt="Image">
+													Deutsch
+												</a>
+											</li>
+											<li class="language-item">
+												<a href="#" class="language-link">
+													<img src="{% static 'blog/assetss/img/language/portugal.png' %}" alt="Image">
+													󠁥󠁮󠁧󠁿Português
+												</a>
+											</li>
+											<li class="language-item">
+												<a href="#" class="language-link">
+													<img src="{% static 'blog/assetss/img/language/china.png' %}" alt="Image">
+													简体中文
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+
+								<ul class="log-in-sign-up">
+									<li>
+										<i class="bx bx-log-in"></i>
+										<a href="{% url 'user-login' %}">Log In</a>
+									</li>
+									<li>
+										<i class="bx bx-user"></i>
+										<a href="{% url 'signup' %}">Sign Up</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Start Navbar Area -->
+			<div class="nav-area-six">
+				<div class="navbar-area">
+					<!-- Menu For Mobile Device -->
+					<div class="mobile-nav">
+						<a href="{% url 'Blog_Home' %}" class="logo">
+							<img src="{% static 'blog/assetss/img/th-4189885426-removebg-preview.png' %}" alt="Logo">
+						</a>
+					</div>
+
+					<!-- Menu For Desktop Device -->
+					<div class="main-nav">
+						<nav class="navbar navbar-expand-md">
+							<div class="container-fluid">
+								<a class="navbar-brand" href="{% url 'Blog_Home' %}">
+									<img src="{% static 'blog/assetss/img/th-4189885426-removebg-preview.png' %}" alt="Logo">
+								</a>
+								
+								<div class="collapse navbar-collapse mean-menu">
+									<ul class="navbar-nav ml-auto">
+										<li class="nav-item">
+											<a href="{% url 'Blog_Home' %}" class="nav-link">Home</a></li>
+
+										<li class="nav-item">
+											<a href="{% url 'Blog_About' %}" class="nav-link">About</a>
+										</li>
+
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												Opportunities
+												<i class="bx bx-chevron-right"></i>
+											</a>
+
+											<ul class="dropdown-menu">
+												<li class="nav-item">
+													<a href="{% url 'bootcamps' %}" class="nav-link">Bootcamps</a>
+												</li>
+												<li class="nav-item">
+													<a href="{% url 'internships' %}" class="nav-link">Internships</a>
+												</li>
+												<li class="nav-item">
+													<a href="{% url 'jobs' %}" class="nav-link">Jobs</a>
+												</li>
+												<li class="nav-item">
+													<a href="{% url 'scholarships' %}" class="nav-link">Scholarships</a>
+												</li>
+											</ul>
+										</li>
+
+
+
+										<li class="nav-item">
+											<a href="{% url 'blog-grid' %}" class="nav-link">Blog</a></li>
+
+										<li class="nav-item">
+											<a href="{% url 'contact-us' %}" class="nav-link">Contact</a>
+										</li>
+									</ul>
+									
+									<!-- Start Other Option -->
+									<div class="others-option">
+										<div class="option-item">
+											<i class="search-btn bx bx-search"></i>
+											<i class="close-btn bx bx-x"></i>
+											
+											<div class="search-overlay search-popup">
+												<div class="search-box">
+													<form class="search-form">
+														<input class="search-input" name="search" placeholder="Search" type="text">
+		
+														<button class="search-button" type="submit">
+															<i class="bx bx-search"></i>
+														</button>
+													</form>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="sidebar-menu">
+											<a href="#" class="burger-menu">
+												<i class="bx bx-menu-alt-left"></i>
+											</a>
+										</div>
+									</div>
+									<!-- End Other Option -->
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!-- End Navbar Area -->
+		</header>
+		<!-- End Heder Area -->
+
+		<!-- Start Sidebar Modal -->
+        <div class="sidebar-modal">
+            <div class="sidebar-modal-inner">
+				<div class="sidebar-header">
+					<div class="sidebar-logo">
+						<img src="{% static 'blog/assetss/img/home-six/logo.png' %}" alt="Image">
+					</div>
+					
+					<span class="close-btn sidebar-modal-close-btn">
+						<i class="bx bx-x"></i>
+					</span>
+				</div>
+
+                <div class="sidebar-about">
+                    <div class="title">
+                        <p>Full Stars Blog covers all your website application development needs</p>
+                    </div>
+                </div>
+
+                <div class="contact-us">
+                    <h3>Contact Us</h3>
+
+                    <ul>
+						<li>
+							<i class="bx bx-location-plus"></i>
+							No. 10 Danube Close Maitama, Abuja,
+						</li>
+						<li>
+							<i class="bx bx-envelope"></i>
+							<a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#d6beb3babab996a5b3bda3f8b5b9bb"><span class="__cf_email__" data-cfemail="076f626b6b684774626c722964686a">[info@fullstars.com]</span></a>
+							<a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#5e373038311e2d3b352b703d3133"><span class="__cf_email__" data-cfemail="325b5c545d72415759471c515d5f">[info@fullstars.com]</span></a>
+							
+						</li>
+						<li>
+							<i class="bx bx-phone-call"></i>
+							<a href="tel:+234-817-483-4113">+234-817-483-4113/a>
+							<a href="tel:+234-817-483-4113">+234-817-483-4113</a>
+						</li>
+					</ul>
+				</div>
+
+                <div class="sidebar-follow-us">
+					<h3>Sidebar Follow</h3>
+
+					<ul class="social-wrap">
+						<li>
+							<a href="#" target="_blank">
+								<i class="bx bxl-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="bx bxl-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="bx bxl-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="bx bxl-youtube"></i>
+							</a>
+						</li>
+					</ul>
+                </div>
+            </div>
+        </div>
+		<!-- End Sidebar Modal -->
+
+		<!-- Start Banner Area -->
+		<section class="banner-area-six">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="banner-text">
+							<h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="1s">Welcome to Full Stars Blog</h1>
+							<p class="wow animate__animated animate__fadeInRight" data-wow-delay="1s">Welcome to Full Stars Blog! We're a community of web developers dedicated to helping women and other aspiring developers achieve their career goals.<br> We believe that technical concepts don't have to be complicated, and we strive to make them relatable and easy to understand.</p>
+
+							<div class="banner-btn wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+								<!-- <a class="default-btn six" href="pricing.html">
+									<i class="bx bx-file"></i>
+									Get a Quote
+								</a> -->
+								<a class="default-btn active" href="{% url 'Blog_About' %}">
+									<i class="bx bx-user"></i>
+									Read More
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-6">
+						<div class="banner-img">
+							<img src="{% static 'blog/assetss/img/Home/abouttt.jpg' %}" alt="Image">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="banner-shape-1">
+				<img src="{% static 'blog/assetss/img/home-six/banner/shape-1.png' %}" alt="Image">
+			</div>
+			<div class="banner-shape-2">
+				<img src="{% static 'blog/assetss/img/home-six/banner/shape-2.png' %}" alt="Image">
+			</div>
+		</section>
+		<!-- End Banner Area -->
+
+		
+
+		<!-- End Services Area -->
+		<section class="services-area ptb-100">
+			<div class="container">
+				<div class="section-title-six">
+					<span><h2>Opporunities</h2></span>
+				</div>
+
+				<div class="services-slider-content">
+					<!-- Start Carousel Thumbs -->
+					<div class="thumbs-wrap">
+						<ul class="owl-thumbs hero-slider-thumb" data-slider-id="1">
+							<li class="owl-thumb-item">
+								<span>Bootcamps</span>
+							</li>
+	
+							<li class="owl-thumb-item">
+								<span>Internships</span>
+							</li>
+	
+							<li class="owl-thumb-item">
+								<span>Scholarships</span>
+							</li>
+	
+							<li class="owl-thumb-item">
+								<span>Jobs</span>
+							</li>
+						</ul>
+						<!-- End Carousel Thumbs -->
+					</div>
+
+					<div class="services-slider owl-theme owl-carousel"  data-slider-id="1">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="services-single-item">
+									<h3>Bootcamps</h3>
+
+									<p>
+										Bootcamps provide valuable opportunities for individuals looking to acquire new skills or transition into a new career path quickly. These intensive and immersive programs offer focused training in areas such as coding, data science, cybersecurity, and digital marketing, among others.<br> Bootcamps often have a practical and hands-on approach, emphasizing real-world projects and collaboration.</p>
+									
+									<a class="default-btn six" href="{% url 'bootcamps' %}">
+										<i class="bx bx-file"></i>
+										Learn More
+									</a>
+								</div>
+							</div>
+	
+							<div class="col-lg-6">
+								<div class="services-img">
+									<img src="{% static 'blog/assetss/img/Bootcamp.jpg' %}" alt="Image">
+								</div>
+							</div>
+						</div>
+	
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="services-single-item">
+									<h3>Internships</h3>
+
+									<p>Internships serve as valuable stepping stones for students and young professionals embarking on their career journeys. These opportunities provide hands-on experience, practical skills development, and a glimpse into the professional world. Internships offer a chance to apply classroom knowledge in a real-world setting, gaining insights into industry practices and building a professional network.</p>
+									
+									<a class="default-btn six" href="{% url 'internships' %}">
+										<i class="bx bx-file"></i>
+										Learn More
+									</a>
+								</div>
+							</div>
+	
+							<div class="col-lg-6">
+								<div class="services-img">
+									<img src="{% static 'blog/assetss/img/home-six/services/services-2.png' %}" alt="Image">
+								</div>
+							</div>
+						</div>
+	
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="services-single-item">
+									<h3>Scholarships</h3>
+
+									<p>Web development scholarships offer aspiring developers an excellent opportunity to pursue their education and career in the field of web development without the financial burden. These scholarships are designed to support individuals who are passionate about web development but may face financial constraints. They provide financial assistance to cover tuition fees, course materials, and other related expenses.</p>
+									
+									<a class="default-btn six" href="{% url 'scholarships' %}">
+										<i class="bx bx-file"></i>
+										Learn More
+									</a>
+								</div>
+							</div>
+	
+							<div class="col-lg-6">
+								<div class="services-img">
+									<img src="{% static 'blog/assetss/img/home-six/services/services-3.png' %}" alt="Image">
+								</div>
+							</div>
+						</div>
+	
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="services-single-item">
+									<h3>Jobs</h3>
+
+									<p>Jobs are an essential part of our lives, providing us with financial stability, personal growth, and a sense of purpose. They come in various forms, from traditional employment to freelancing, remote work, and entrepreneurship. Jobs offer the opportunity to utilize our skills, knowledge, and expertise in a specific field or industry. They provide a platform for professional growth, allowing us to learn new skills, gain experience, and climb the career ladder.</p>
+									
+									<a class="default-btn six" href="{% url 'jobs' %}">
+										<i class="bx bx-file"></i>
+										Learn More
+									</a>
+								</div>
+							</div>
+	
+							<div class="col-lg-6">
+								<div class="services-img">
+									<img src="{% static 'blog/assetss/img/home-six/services/services-4.png' %}" alt="Image">
+								</div>
+							</div>
+						</div>
+	
+						<!-- <div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="services-single-item">
+									<h3>Splunk Services</h3>
+
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, vero corporis voluptates beatae pariatur laudantium, fugiat illum ab deserunt nostrum aliquid quisquam esse? Voluptatibus quia velit numquam esse porro ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus vero, corporis Voluptatibus quia.</p>
+		
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi quasi cumque placeat fuga. Ea, eius nihil dolorem cumque</p>
+									
+									<a class="default-btn six" href="{% url 'Blog_About' %}">
+										<i class="bx bx-file"></i>
+										Learn More
+									</a>
+								</div>
+							</div> -->
+	
+							<!-- <div class="col-lg-6">
+								<div class="services-img">
+									<img src="{% static 'blog/assetss/img/home-six/services/services-5.png' %}" alt="Image">
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Services Area -->
+
+		
+
+		<!-- Start Counter Area -->
+		<section class="counter-area-six bg-color pt-100 pb-70">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-counters">
+							<i class="flaticon-anti-virus-software"></i>
+
+							<h2>
+								<span class="odometer" data-count="3500">00</span> 
+								<span class="target">+</span>
+							</h2>
+
+							<p>Traffic</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-counters">
+							<i class="flaticon-cyber"></i>
+
+							<h2>
+								<span class="odometer" data-count="2500">00</span> 
+								<span class="target">+</span>
+							</h2>
+
+							<p>Subscribers</p>
+						</div>
+					</div>
+
+					<!-- <div class="col-lg-3 col-sm-6">
+						<div class="single-counters">
+							<i class="flaticon-content"></i>
+
+							<h2>
+								<span class="odometer" data-count="85">00</span> 
+								<span class="target">%</span>
+							</h2>
+
+							<p>Customer Retention Rate</p>
+						</div>
+					</div> -->
+
+					<!-- <div class="col-lg-3 col-sm-6">
+						<div class="single-counters">
+							<i class="flaticon-medal"></i>
+
+							<h2>
+								<span class="odometer" data-count="350">00</span> 
+								<span class="target">+</span>
+							</h2>
+
+							<p>Cybersecurity Experts</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<!-- End Counter Area -->
+
+		<!-- Start Blog Area -->
+		<section class="blog-area pb-70">
+			<div class="container">
+				<div class="section-title-six">
+					<span><h2>Newest Posts</h2></span>
+					<!-- <h2>Our Latest Insights Are On Top</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+				</div>
+
+				<div class="row">
+					{% for post in posts %}
+					<div class="col-lg-4 col-sm-6">
+						<div class="single-blog-post">
+							<a href="{% url 'blog_details' post.id %}">
+								<img {% if post.media_file %}src="{{post.media_file.url}}"{% else %} src="" {% endif %} alt="Image">
+							</a>
+
+							<div class="blog-content">
+								<ul>
+									<li>
+										<i class="bx bx-purchase-tag"></i>
+										{{post.catrgory.name}}
+									</li>
+									<li>
+										<i class="bx bx-time"></i>
+										5 min read
+									</li>
+								</ul>
+								<h3>
+									<a href="{% url 'blog_details' post.id %}">{{post.title}}</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+		<!-- End Blog Area -->
+
+
+		<!-- Start Footer Area -->
+		<footer class="footer-area pt-100 pb-70">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget">
+							<a href="{% url 'Blog_Home' %}" class="logo">
+								<img src="{% static 'blog/assetss/img/th-4189885426-removebg-preview.png' %}" alt="Image">
+							</a>
+
+						
+
+							<ul class="social-icon">
+								<li>
+									<a href="#">
+										<i class="bx bxl-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="bx bxl-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="bx bxl-linkedin-square"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="bx bxl-twitter"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget">
+							<h3>Contact Us</h3>
+
+							<ul class="address">
+								<li class="location">
+									<span>Address:</span>
+									No. 10 Danube Close Maitama, Abuja.
+								</li>
+								<li>
+									<span>Email:</span>
+									<a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#462e232a2a290635232d336825292b"><span class="__cf_email__" data-cfemail="7f171a1313103f0c1a140a511c1012">[info@fullstars.com]</span></a>
+								</li>
+								<li>
+									<span>Phone:</span>
+									<a href="tel:+234-817-483-4113">+234-817-483-4113</a>
+								</li>
+								<li>
+									<span>Fax:</span>
+									<a href="tel:+234-817-483-4113">+234-817-483-4113</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget">
+							<h3>Community</h3>
+
+							<ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bx-chevrons-right"></i>
+                                        Discord
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bx-chevrons-right"></i>
+                                        Telegram
+                                    </a>
+                                </li>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget">
+							<h3>Support & Help</h3>
+
+							<ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bx-chevrons-right"></i>
+                                        Support Forum
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bx-chevrons-right"></i>
+                                        FAQ Questions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bx-chevrons-right"></i>
+                                        24/7 Support for Help
+                                    </a>
+                                </li>
+							</ul>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+
+		<!-- Start Copy Right Area -->
+		<div class="copy-right-area">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-6">
+						<p>
+							<i class="bx bx-copyright"></i>Full Stars Blog Is Proudly Owned By  
+							<a href="../../../envytheme.com/{% url 'Blog_Home' %}" target="blank">Tesudirana</a>
+						</p>
+					</div>
+
+					<div class="col-lg-6 col-md-6">
+						<ul class="footer-menu">
+							<li>
+								<a href="privacy-policy.html" target="_blank">
+									Privacy Policy 
+								</a>
+							</li>
+							<li>
+								<a href="terms-conditions.html" target="_blank">
+									Terms & Conditions
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Copy Right Area -->
+		
+		<!-- Start Go Top Area -->
+		<div class="go-top">
+			<i class='bx bx-chevrons-up'></i>
+			<i class='bx bx-chevrons-up'></i>
+		</div>
+		<!-- End Go Top Area -->
+		
+
+        <!-- Jquery Min JS -->
+        <script data-cfasync="false" src="{% static 'blog/../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'blog/assetss/js/jquery.min.js' %}"></script> 
+        <!-- Bootstrap Bundle Min JS -->
+        <script src="{% static 'blog/assetss/js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Meanmenu Min JS -->
+		<script src="{% static 'blog/assetss/js/meanmenu.min.js' %}"></script>
+		<!-- Owl Carousel Min JS -->
+		<script src="{% static 'blog/assetss/js/owl.carousel.min.js' %}"></script>
+		<!-- Owl Carousel Thumbs Min JS -->
+		<script src="{% static 'blog/assetss/js/carousel-thumbs.min.js' %}"></script>
+		<!-- Wow Min JS -->
+        <script src="{% static 'blog/assetss/js/wow.min.js' %}"></script>
+        <!-- Nice Select Min JS -->
+		<script src="{% static 'blog/assetss/js/nice-select.min.js' %}"></script>
+        <!-- Magnific Popup Min JS -->
+		<script src="{% static 'blog/assetss/js/magnific-popup.min.js' %}"></script>
+		<!-- Ofi Min JS --> 
+		<script src="{% static 'blog/assetss/js/ofi.min.js' %}"></script>
+		<!-- jarallax Min JS --> 
+		<script src="{% static 'blog/assetss/js/jarallax.min.js' %}"></script>
+		<!-- Appear Min JS --> 
+        <script src="{% static 'blog/assetss/js/appear.min.js' %}"></script>
+		<!-- Odometer JS --> 
+		<script src="{% static 'blog/assetss/js/odometer.min.js' %}"></script>
+		<!-- Form Validator Min JS -->
+		<script src="{% static 'blog/assetss/js/form-validator.min.js' %}"></script>
+		<!-- Contact JS -->
+		<script src="{% static 'blog/assetss/js/contact-form-script.js' %}"></script>
+		<!-- Ajaxchimp Min JS -->
+		<script src="{% static 'blog/assetss/js/ajaxchimp.min.js' %}"></script>
+        <!-- Custom JS -->
+		<script src="{% static 'blog/assetss/js/custom.js' %}"></script>
+    </body>
+
+</html>

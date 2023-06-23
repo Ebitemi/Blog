@@ -1,0 +1,440 @@
+{% extends './base2.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Start Page Title Area -->
+<div class="page-title-area bg-19">
+	<div class="container">
+		<div class="page-title-content">
+			<h2>Full Stars Blog</h2>
+			<ul>
+				<!-- <li>
+					<a href="index-2.html">
+						Home 
+					</a>
+				</li> -->
+
+				<li>Blog</li>
+				<li class="active">Blog Details</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Blog Details Area -->
+<section class="blog-details-area ptb-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-12">
+				<div class="blog-details-desc">
+					<div class="article-content">
+						<div class="entry-meta">
+							<ul>
+								<li><span>Posted On:</span> <a href="#">{{post.date_posted}}</a></li>
+								<li><span>Posted By:</span> <a href="#">{{post.author}}</a></li>
+							</ul>
+						</div>
+						<h3>{{post.title}}</h3>
+
+						<div class="article-image">
+							<img {% if post.media_file %}src="{{post.media_file.url}}"{% else %} src="" {% endif %} alt="image">
+						</div>
+
+						<p id="blog_content">{{post.content}}</p>
+
+						
+
+						<blockquote class="flaticon-quote">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid praesentium eveniet illum asperiores, quidem, ipsum voluptatum numquam ducimus nisi exercitationem dolorum facilis Repellendus aliquid praesentium eveniet illum asperiores.</p>
+						</blockquote>
+
+						<h3 class="related-posts">Related Articles</h3>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<div class="b-d-s-item">
+									<a href="#">
+										<img src="{% static 'blog/assetss/img/blog/4.jpg' %}" alt="Image">
+										<span class="s-date">
+											15 <br> Aug
+										</span>
+										<h3>Common Mistakes Newbies in Full Stack Make</h3>
+									</a>
+
+									<p>Lorem ipsum, dolor sit amet consectetur sit adipisicing Consectetur nisi pariatur quos.</p>
+
+									<a href="#">Read More</a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<div class="b-d-s-item mb-0">
+									<a href="#">
+										<img src="{% static 'blog/assetss/img/blog/5.jpg' %}" alt="Image">
+										<span class="s-date">
+											05 <br> Oct
+										</span>
+										<h3>Why Women Shy Away From Software Development</h3>
+									</a>
+
+									<p>Lorem ipsum, dolor sit amet consectetur sit adipisicing Consectetur nisi pariatur quos.</p>
+
+									<a href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="article-footer">
+						<div class="article-tags">
+							<span><i class='bx bx-share-alt'></i></span>
+
+							<a href="#">Share</a>
+						</div>
+
+						<div class="article-share">
+							<ul class="social">
+								<li>
+									<a href="#" target="_blank">
+										<i class='bx bxl-facebook'></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class='bx bxl-twitter'></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class='bx bxl-linkedin'></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class='bx bxl-instagram'></i>
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+
+					<div class="post-navigation">
+						<div class="navigation-links">
+							<div class="nav-previous">
+								<a href="#"><i class='bx bx-left-arrow-alt'></i> Prev Article</a>
+							</div>
+
+							<div class="nav-next">
+								<a href="#">Next Article <i class='bx bx-right-arrow-alt'></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="comments-area">
+						<h3 class="comments-title">3 Comments:</h3>
+
+						<ol class="comment-list">
+							<li class="comment">
+								<div class="comment-body">
+									<footer class="comment-meta">
+										<div class="comment-author vcard">
+											<img src="{% static 'blog/assetss/img/blog-details/comment-img-1.jpg' %}" class="avatar" alt="image">
+											<b class="fn">Prudy Diamond</b>
+											<span class="says">says:</span>
+										</div>
+
+										<div class="comment-metadata">
+											<a href="#">
+												<span>Jun  30, 2022 at 10:59 AM</span>
+											</a>
+										</div>
+									</footer>
+
+									<div class="comment-content">
+										<p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+									</div>
+
+									<div class="reply">
+										<a href="#" class="comment-reply-link">Reply</a>
+									</div>
+								</div>
+
+								<ol class="children">
+									<li class="comment">
+										<div class="comment-body">
+											<footer class="comment-meta">
+												<div class="comment-author vcard">
+													<img src="{% static 'blog/assetss/img/blog-details/comment-img-2.jpg' %}" class="avatar" alt="image">
+													<b class="fn">Ethan Harris</b>
+													<span class="says">says:</span>
+												</div>
+	
+												<div class="comment-metadata">
+													<a href="#">
+														<span>Jul  2, 2022 at 14:00 PM</span>
+													</a>
+												</div>
+											</footer>
+	
+											<div class="comment-content">
+												<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim</p>
+											</div>
+	
+											<div class="reply">
+												<a href="#" class="comment-reply-link">Reply</a>
+											</div>
+										</div>
+									</li>
+								</ol>
+							</li>
+
+							<li class="comment">
+								<div class="comment-body border-none">
+									<footer class="comment-meta">
+										<div class="comment-author vcard">
+											<img src="{% static 'blog/assetss/img/blog-details/comment-img-3.jpg' %}" class="avatar" alt="image">
+											<b class="fn">Thomas Emmanuel</b>
+											<span class="says">says:</span>
+										</div>
+
+										<div class="comment-metadata">
+											<a href="#">
+												<span>Aug  8, 2022 at 19:00 PM</span>
+											</a>
+										</div>
+									</footer>
+
+									<div class="comment-content">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Suscipit sint eaque rerum, impedit illum qui. Aliquid, obcaecati nemo magni molestiae, labore possimus itaque nam ullam officiis ab qui explicabo voluptatem</p>
+									</div>
+
+									<div class="reply">
+										<a href="#" class="comment-reply-link">Reply</a>
+									</div>
+								</div>
+							</li>
+						</ol>
+
+						<div class="comment-respond">
+							<h3 class="comment-reply-title">Leave a Reply</h3>
+
+							<form class="comment-form">
+								<p class="comment-notes">
+									<span id="email-notes">Your email address will not be published.</span>
+									Required fields are asterisked 
+									<span class="required">*</span>
+								</p>
+								<p class="comment-form-author">
+									<label>Name <span class="required">*</span></label>
+									<input type="text" id="author" name="author" required="required">
+								</p>
+								<p class="comment-form-email">
+									<label>Email <span class="required">*</span></label>
+									<input type="email" id="email" name="email" required="required">
+								</p>
+								<!-- <p class="comment-form-url">
+									<label>Website</label>
+									<input type="url" id="url" name="url">
+								</p> -->
+								<p class="comment-form-comment">
+									<label>Comment</label>
+									<textarea name="comment" id="comment" cols="45" rows="5" maxlength="65525" required="required"></textarea>
+								</p>
+								<p class="form-submit">
+									<input type="submit"< name="submit" id="submit" class="submit" value="Post">
+								</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-12">
+				<aside class="widget-area" id="secondary">
+					<div class="widget widget_search">
+						<h3 class="widget-title">Search Now</h3>
+						<div class="post-wrap">
+							<form class="search-form">
+								<label>
+									<span class="screen-reader-text">Search for:</span>
+									<input type="search" class="search-field" placeholder="Search...">
+								</label>
+								<button type="submit"><i class='bx bx-search'></i></button>
+							</form>
+						</div>
+					</div>
+
+					<section class="widget widget-peru-posts-thumb">
+						<h3 class="widget-title">Popular Posts</h3>
+						<div class="post-wrap">
+							<article class="item">
+								<a href="#" class="thumb">
+									<span class="fullimage cover bg1" role="img"></span>
+								</a>
+								<div class="info">
+									<time datetime="2022-06-30">April 20, 2022</time>
+									<h4 class="title usmall">
+										<a href="#">
+											What is Web Hosting: Is it Free?
+										</a>
+									</h4>
+								</div>
+
+								<div class="clear"></div>
+							</article>
+
+							<article class="item">
+								<a href="#" class="thumb">
+									<span class="fullimage cover bg2" role="img"></span>
+								</a>
+								<div class="info">
+									<time datetime="2022-06-30">May 11, 2022</time>
+									<h4 class="title usmall">
+										<a href="#">
+											How Lucrative is Web Development
+										</a>
+									</h4>
+								</div>
+
+								<div class="clear"></div>
+							</article>
+
+							<article class="item">
+								<a href="#" class="thumb">
+									<span class="fullimage cover bg3" role="img"></span>
+								</a>
+								<div class="info">
+									<time datetime="2022-06-30">Sept  24, 2022</time>
+									<h4 class="title usmall">
+										<a href="#">
+											Health Tips For Women In Web Development 
+										</a> 
+									</h4>
+								</div>
+
+								<div class="clear"></div>
+							</article>
+							
+							<article class="item">
+								<a href="#" class="thumb">
+									<span class="fullimage cover bg4" role="img"></span>
+								</a>
+								<div class="info">
+									<time datetime="2022-06-30">Aug 15, 2022</time>
+									<h4 class="title usmall">
+										<a href="#">
+											Common Mistakes Newbies in Full Stack Make
+										</a>
+									</h4>
+								</div>
+
+								<div class="clear"></div>
+							</article>
+						</div>
+					</section>
+
+					<section class="widget widget_categories">
+						<h3 class="widget-title">Archives</h3>
+						<div class="post-wrap">
+							<ul>
+								<li>
+									<a href="#">April <span>2022</span></a>
+								</li>
+								<li>
+									<a href="#">May <span>2022</span></a>
+								</li>
+								<li>
+									<a href="#">June <span>2022</span></a>
+								</li>
+								<li>
+									<a href="#">July <span>2022</span></a>
+								</li>
+								<li>
+									<a href="#">August <span>2022</span></a>
+								</li>
+								<li>
+									<a href="#">September <span>2022</span></a>
+								</li>
+								<li>
+									<a href="#">October <span>2022</span></a>
+								</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section class="widget widget_categories">
+						<h3 class="widget-title">Categories</h3>
+						<div class="post-wrap">
+							<ul>
+								<li>
+									<a href="{% url 'frontend' %}">Frontend <span>(10)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'backend' %}">Backend <span>(20)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'fullstack' %}">Full Stack <span>(10)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'wordpress' %}">WordPress <span>(12)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'tutorials' %}">Tutorials <span>(16)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'tips' %}">Tips <span>(17)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'jokes' %}">Tech Jokes <span>(17)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'memes' %}">Tech Memes <span>(17)</span></a>
+								</li>
+								<li>
+									<a href="{% url 'backend' %}">Tech Events / Awards <span>(17)</span></a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- <section class="widget widget_meta">
+						<h3 class="widget-title">Meta</h3>
+						<div class="post-wrap">
+							<ul>
+								<li><a href="log-in.html">Log in</a></li>
+								<li><a href="#">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+								<li><a href="#">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+								<li><a href="#">WordPress.org</a></li>
+							</ul>
+						</div>
+					</section>
+-->
+					<section class="widget widget_tag_cloud">
+						<h3 class="widget-title">Tagssss</h3>
+						<div class="post-wrap">
+							<div class="tagcloud">
+								<a href="#">Web Development (3)</a>
+								<a href="#">Full Stack (3)</a>
+								<a href="#">Frontend (2)</a>
+								<a href="#">Backend (2)</a>
+								<a href="#">Tutorials (1)</a>
+								<a href="#">Opportunities (2) </a>
+							</div>
+						</div>
+					</section>       
+				</aside>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	let content = document.getElementById('blog_content')
+	let content_text = content.innerText
+
+	content.innerHTML = content_text
+</script>
+<!-- End Blog Details Area -->
+
+{% endblock %}

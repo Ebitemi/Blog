@@ -1,0 +1,215 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+ <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">Registration Form</h4>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+
+      <!-- Login box.scss -->
+      <!-- ============================================================== -->
+      <div
+        class="
+          auth-wrapper
+          d-flex
+          no-block
+          justify-content-center
+          align-items-center
+          
+        "
+      >
+        
+            <!-- Form -->
+            <form class="form-horizontal mt-3" action="" method="post">
+              {% csrf_token %}
+              <div class="row pb-4">
+                <div class="col-12">
+                  <!-- Firstname -->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text bg-danger text-white h-100"
+                        id="basic-addon1"
+                        ><i class="mdi mdi-account fs-4"></i
+                          ></span>
+                    </div>
+                    <input
+                      name="first_name"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="First Name"
+                      aria-label="First Name"
+                      aria-describedby="basic-addon1"
+                      required
+                    />
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text bg-danger text-white h-100"
+                        id="basic-addon1"
+                        ><i class="mdi mdi-account fs-4"></i
+                          ></span>
+                    </div>
+                    <input
+                      name="last_name"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Last Name"
+                      aria-label="Last Name"
+                      aria-describedby="basic-addon1"
+                      required
+                    />
+                  </div>
+
+                <!-- Role -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span
+                      class="input-group-text bg-success text-white h-100"
+                      id="basic-addon1"
+                      ><i class="mdi mdi-account fs-4"></i
+                    ></span>
+                  </div>
+                  <input
+                    name="role"
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Role"
+                    aria-label="Role"
+                    aria-describedby="basic-addon1"
+                    required
+                  />
+                </div>
+                  <!-- Username -->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text bg-success text-white h-100"
+                        id="basic-addon1"
+                        ><i class="mdi mdi-account fs-4"></i
+                      ></span>
+                    </div>
+                    <input
+                      name="username"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Username"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                      required
+                    />
+                  </div>
+
+                  <!-- email -->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text bg-danger text-white h-100"
+                        id="basic-addon1"
+                        ><i class="mdi mdi-email fs-4"></i
+                      ></span>
+                    </div>
+                    <input
+                      name="email"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Email Address"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                      required
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text bg-warning text-white h-100"
+                        id="basic-addon2"
+                        ><i class="mdi mdi-lock fs-4"></i
+                      ></span>
+                    </div>
+                    <input
+                      name="password"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Password"
+                      aria-label="Password"
+                      aria-describedby="basic-addon1"
+                      required
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text bg-info text-white h-100"
+                        id="basic-addon2"
+                        ><i class="mdi mdi-lock fs-4"></i
+                      ></span>
+                    </div>
+                    <input
+                      name="confirm_passwd"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder=" Confirm Password"
+                      aria-label="Password"
+                      aria-describedby="basic-addon1"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="pt-3 d-grid">
+                      <button
+                        class="btn btn-block btn-lg btn-info"
+                        type="submit"
+                      >
+                        Sign Up
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <!-- ============================================================== -->
+    <!-- All Required js -->
+    <!-- ============================================================== -->
+    <script src="{% static 'blog/assets/libs/jquery/dist/jquery.min.js' %}"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="{% static 'blog/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <script>
+      $(".preloader").fadeOut();
+    </script>
+  </body>
+</html>
+
+
+{% endblock %}

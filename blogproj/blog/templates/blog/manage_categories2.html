@@ -1,0 +1,69 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+ <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">Manage categories</h4>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+
+<div class="container-fluid">
+         
+    <!-- ============================================================== -->
+    <!-- Start Here -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+        <form method="post">
+            <table class="table"><thead>
+              <tr><th>Categories</th>
+              <th>S/N</th>
+              <th>Title</th>
+              <th colspan="2">Action</th></tr></thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fullstack</td>
+                <td><button
+                  type="button"
+                  class="btn btn-cyan btn-sm text-white"
+                >
+                  Edit
+                </button></td>
+                <td><button 
+                  type="button" 
+                  class="btn btn-danger btn-sm text-white"
+                >
+                  Delete
+                </button></td></tr>
+              </tbody>
+            </table>
+        </form>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================== -->
+    
+
+</div>
+  <!-- ============================================================== -->
+  <!-- Stop Here  -->
+
+  {% endblock %}
